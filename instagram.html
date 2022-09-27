@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            margin: 32px auto;
+        }
+
+        #container {
+            display: flex;
+            justify-content: center;
+            box-sizing: border-box;
+            align-items: center;
+            align-content: center;
+
+
+            background-color: black;
+        }
+
+        .left-content {
+            margin-right: 32;
+
+            width: 380px;
+            height: 501px;
+
+            background-color: white;
+        }
+        .right-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            width: 350px;
+            height: 704px;
+ 
+            background-color: rgb(228, 184, 24);
+        }
+            
+
+        .signin-content {
+            margin-bottom: 10px;
+            border: 1px solid #dbdbdb;
+            border-radius: 2px;
+            height: 396px;
+            background-color: white;
+
+        }
+        .signup-content {
+            margin-bottom: 10px;
+            border: 1px solid #dbdbdb;
+            border-radius: 2px;
+            height: 63px;
+
+            background-color: white;
+        }
+        .store-content {
+            border: 1px solid #dbdbdb;
+            border-radius: 2px;
+            height: 102px;
+
+
+            background-color: white;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div id="container">
+        <div class="left-content"></div>
+
+        <div class="right-content">
+            <div class="signin-content"></div>
+            <div class="signup-content"></div>
+            <div class="store-content"></div>
+        </div>
+    </div>
+</body>
+</html>

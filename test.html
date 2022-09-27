@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        html, body{
+            margin: 0;
+            height: 100%;
+        }
+
+        #container {
+            display: flex;
+
+            height: 100%;
+        }
+        .left-aside {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            width: 100px;
+
+            background-color: rgb(237, 115, 115);
+        }
+
+        .main-container {
+            width: 100%;
+
+            background-color: bisque;
+        }
+        header {
+            width: 100%;
+
+            background-color: aqua;
+        }
+
+        .main-img{
+            height: 300px;
+
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-around;
+
+            height: 50px;
+
+            background-color: black;
+        }
+
+        i {
+            margin: 15px 0px;
+
+            font-size: 30px;
+            cursor: pointer;
+        }
+
+        button {
+            width: 100px;
+            height: 100%;
+
+            border: none;
+            color: white;
+            font-weight: 700;
+
+            background-color: rgb(0, 0, 0,  0);
+
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="left-aside">
+            <i class="fa-solid fa-house"></i>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-image"></i>
+        </div>
+        <div class="main-container">
+            <header>
+                <div class="main-img"></div>
+                <div class="nav">
+                    <button type="button">메뉴1</button>
+                    <button type="button">메뉴2</button>
+                    <button type="button">메뉴3</button>
+                    <button type="button">메뉴4</button>
+                    <button type="button">메뉴5</button>
+                    <button type="button">메뉴6</button>
+                    <button type="button">메뉴7</button>
+                </div>
+        </header>
+        </div>
+    </div>
+</body>
+</html>
