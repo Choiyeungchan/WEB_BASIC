@@ -14,14 +14,6 @@ button.addEventListener("click", () => {
 /*onclic : */
 
 
-button.onclick = () => {
-    console.log(inputs[0].placeholder);
-    console.log(inputs[1].value);
-    console.log(inputs[2].type);
-    console.log(inputs[3]);
-    console.log(inputs[4]);
-}
-
 
 /*
 Array 사용해야한다.
@@ -32,13 +24,14 @@ Array 사용해야한다.
 
 */
 
+let validStatus = [false, false, false, false, false];
+
 let inputObjects = new Array();
 
 button.onclick = () => {
-    //
     inputs.forEach((input, index) => {
 
-        let test = 10
+        let test = 10;
 
         let inputObj = {
             value:input.value,
@@ -47,29 +40,25 @@ button.onclick = () => {
                 console.log(inputObj.placeholder + "print 메소드 실행 ");
             },
             "test" : test  //변수명과 객체명을 같이 쓰고 싶을 때는 ""사용.
-        }
+        };
 
         inputObjects.push(inputObj);
-
 
         validStatus[index] = !inputIsEmpty(input.value);
     });
 
     console.log(inputObjects);
 
-//////////////////////////////////////////////////////////////////////
-
-let validStatus = [false, false, false, false, false];
 
     if(validStatus.includes(false)){
         for(let i= 0; i <validStatus.length; i++) {
             if(!validStatus[i]){
                 alert(inputs[i]. placeholder + "이 입력되지 않았습니다.");
                 break;
-            }else{
-                alert("검사완료.")
+            }
         }
-    }
+    }else{
+        alert("검사완료.");
     }
   
 }
